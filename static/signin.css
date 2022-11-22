@@ -1,0 +1,40 @@
+#sub-btn{
+	background-color: #000;
+	color: #fff;
+  }
+  
+#sub-btn:hover {
+	color: #000;
+    background-color: #fff;
+
+}
+
+#back {
+	color: #fff;
+}
+
+#back:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.buttonControl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  .profile-image-pic{
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+  }
+    
+  .cardbody-s{
+	background-color: #CF0A0A;
+	border: 1px solid black;
+	border-radius: 5px;
+  }
+  
+  a {
+	text-decoration: none;
+  }
