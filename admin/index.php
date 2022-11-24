@@ -17,13 +17,14 @@
 
         require_once("valida_cookies.php");
     ?>
-<div class="container">
-  <h2 class="page-header">Bem-vindo ao Painel Admin - Jornal Diário | <a href="?pg=logout" class="btn">SAIR</a></h2>
-          <a href="?pg=inserir" class="btn">
-          Inserir Novo Artigo</a>
+<div class="container pb-0">
+    <h2 class="page-header">Bem-vindo ao Painel Admin - Jornal Diário | 
+    <a href="?pg=inserir" class="btn"> Inserir Novo Artigo</a>
+    <a href="?pg=logout" class="btn">Sair</a> 
+    </h2>      
     </div>
 
-    <div class="container">
+    <div class="container pt-2">
     <?php
     #Área de Conteúdo
     if(empty($_SERVER["QUERY_STRING"])) {

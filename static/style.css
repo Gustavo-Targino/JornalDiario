@@ -71,12 +71,22 @@ header, .navbar {
 	color: #000;
 	cursor: pointer;
 }
+
 /* Notícias */
 
 #news {
-    padding: 3rem;
+    padding: 1.5rem 3rem;
 }
 
+#theme {
+    margin-bottom: 0.2rem;
+}
+
+#hour {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
 
 /* Fale Conosco */
 
@@ -115,4 +125,11 @@ footer {
 
 #footer-text {
     color: #fff;
+}
+
+/* ADMIN */
+
+.crud:hover {
+    color: #CF0A0A;
+    cursor: pointer;
 }
