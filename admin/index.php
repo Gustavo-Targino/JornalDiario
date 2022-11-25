@@ -24,7 +24,7 @@
     </h2>      
     </div>
 
-    <div class="container pt-2">
+    <div class="container pt-2 px-0">
     <?php
     #Área de Conteúdo
     if(empty($_SERVER["QUERY_STRING"])) {

@@ -18,8 +18,8 @@
         <a href='?pg=faleconosco'>Tente Novamente</a>";
     } else {
        echo "<h4 id='form-success-message'>Olá, $nome! Sua mensagem foi enviada com sucesso.</h4>";
-       echo "<h5> <a href='?pg=principal' class='form-link'>Voltar para a página principal</a> </h5>";
-    echo "<h5 id='form-success-message'> <a href='?pg=faleconosco' class='form-link'>Enviar outra mensagem</a> </h5>";
+       echo "<h5> <a href='?pg=principal' class='form-link btn'>Voltar para a página principal</a> </h5>";
+    echo "<h5 id='form-success-message'> <a href='?pg=faleconosco' class='form-link btn'>Enviar outra mensagem</a> </h5>";
     }
 
 ?>

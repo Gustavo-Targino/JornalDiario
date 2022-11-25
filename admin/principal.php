@@ -1,13 +1,15 @@
-<!-- <script language='javascript'>
+<script language='javascript'>
 
 function confirmaExclusao(aURL) {
 
-    if(confirm('Você tem certeza que deseja excluir?')) {
+    if(confirm('Você tem certeza que deseja excluir essa matéria?')) {
     location.href = aURL;
-    }
+  }
+
 }
 
-</script> -->
+</script>
+
 
 <?php include "../inc/config.inc.php"; ?>
 <?php
@@ -19,15 +21,18 @@ $todos = mysqli_query($conn, $sql);
 ?>
     
 <section class="intro">
-  <div class="gradient-custom-2">
+  <div>
     <div class="mask d-flex align-items-center">
+      
       <div class="container">
+        
         <div class="row justify-content-center">
-          <div class="col-10">
+          <p id="successP" style="text-align: center;"></p>
+          <div class="col-20">
             <div class="table-responsive">
-              <table class="table table-light table-bordered mb-0">
+              <table class="table table-striped table-hover table-bordered border-dark mb-0">
                 
-                <thead>
+                <thead class="table-dark">
                   <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Título da Matéria</th>
@@ -41,9 +46,10 @@ $todos = mysqli_query($conn, $sql);
                   <tr>
                     <th scope="row"><?=$dados['id'];?></th>
                     <td><?=$dados['titulo'];?></td>
-                    <td><i class="fas fa-pen d-flex justify-content-center crud"></i></td>
-                    <td><i class="fas fa-trash d-flex justify-content-center crud"></i></td>
+                    <td><a class="crud-link" href="?pg=alterar&id=<?=$dados['id']; ?>"> <i class="fas fa-pen d-flex justify-content-center align-items-center crud"></i></a></td>
+                    <td><a class="crud-link" href="javascript:confirmaExclusao('excluir.php?&id=<?=$dados['id']; ?>')" class="btn ask"> <i class="fas fa-trash d-flex justify-content-center align-items-center crud"></i></a></td>
                   </tr>
+          
                   <?php } ?>
                 </tbody>
               </table>

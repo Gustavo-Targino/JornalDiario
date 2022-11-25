@@ -6,10 +6,11 @@
     $titulo = $_POST['titulo'];
     $subtitulo = $_POST['subtitulo'];
     $materia = $_POST['materia'];
+    $fonte = $_POST['fonte'];
 
    $sql = "INSERT INTO materias (titulo, 
-    subtitulo, materia, d_h) 
-    VALUES ('$titulo','$subtitulo','$materia', '$data_atual')";
+    subtitulo, materia, d_h, fonte) 
+    VALUES ('$titulo','$subtitulo','$materia', '$data_atual', '$fonte')";
 
     $insert = mysqli_query($conn, $sql);
 

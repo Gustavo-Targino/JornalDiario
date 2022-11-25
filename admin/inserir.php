@@ -6,5 +6,6 @@
 	 Subtítulo: <input type="text" class="form-control" name="subtitulo" required><br>
 	 Corpo da matéria:<textarea class="form-control" name="materia" rows="5" cols="10"
       required></textarea><br>
+    Fonte: <input type="text" class="form-control" name="fonte" required><br>
 	 <button type="submit" class="btn">Enviar</button>
   </form>

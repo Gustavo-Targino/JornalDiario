@@ -82,6 +82,15 @@ header, .navbar {
     margin-bottom: 0.2rem;
 }
 
+#fonte {
+    text-decoration: none;
+    color: #CF0A0A;
+}
+
+#fonte:hover {
+    text-decoration: underline;
+}
+
 #hour {
     margin: 0;
     padding: 0;
@@ -101,12 +110,12 @@ header, .navbar {
 }
 
 .form-link {
-    color: var(--primary--color);
+    color: #fff;
     text-decoration: none;
 }
 
 .form-link:hover {
-    color: #000;
+    color: #fff;
 }
 
 #form-success-message {
@@ -132,4 +141,9 @@ footer {
 .crud:hover {
     color: #CF0A0A;
     cursor: pointer;
+}
+
+.crud-link {
+    text-decoration: none;
+    color: #000;
 }
