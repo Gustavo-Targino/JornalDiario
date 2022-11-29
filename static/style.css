@@ -5,7 +5,7 @@
 
 /* Página */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .row {
@@ -36,6 +36,7 @@ header, .navbar {
 
 #nav-container {
     padding-block: 0;
+    margin-left: 6.25%;
 }
 
 #logo {

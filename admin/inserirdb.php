@@ -1,7 +1,7 @@
 <?php
     setlocale(LC_ALL, "pt_BR", 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
     $day = strftime('%A, ');
-    $data_atual = strftime(ucfirst($day) . '%d de %B de %Y');
+    $data_atual = utf8_encode(strftime(ucfirst($day) . '%d de %B de %Y')); 
 
     $titulo = $_POST['titulo'];
     $subtitulo = $_POST['subtitulo'];
