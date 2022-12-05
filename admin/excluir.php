@@ -11,7 +11,7 @@ $delete = mysqli_query($conn, $sql);
 if(!$delete){
     echo "Não foi possível excluir registro. <a class='btn' href='?pg=inserir'>Tente Novamente</a>";
 } else {    
-    include_once('./sucesso.php');
+    header('location: ./index.php');
 }
 
 ?>
